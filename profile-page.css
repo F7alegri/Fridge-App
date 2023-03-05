@@ -1,0 +1,165 @@
+@charset "UTF-8";
+/* CSS Document */
+
+body{
+	background-color: aliceblue;
+}
+
+.navbar{
+	height: 15vh;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+	grid-template-rows: auto;
+	grid-template-areas: 
+		'fridge space space new exit pp';
+	border-bottom: 3px solid #dddddd;
+	margin-bottom: 2%;
+}
+
+.fridge{
+	grid-area: fridge;
+	color: black;
+	font-size: 30px;
+	font-weight: bold;
+	display: flex;
+	align-self: center;
+	margin-left: 2%;
+}
+.fridge img{
+	height: 5vh;
+	margin-right: 3%;
+}
+.new-ingredient{
+	grid-area: new;
+	font-weight: bold;
+	font-size: 20px;
+	width: 100%;
+	display: flex;
+	align-self: center;
+	justify-self:right;
+	margin-right: -70%;
+}
+.new-ingredient ion-icon{
+	font-size: 30px;
+	display: flex;
+	align-self: center;
+	margin-top: -2%;
+}
+.Exit{
+	grid-area: exit;
+	display: flex;
+	align-self: center;
+	justify-self:right;
+	margin-right: -20%;
+}
+.Exit a{
+	text-decoration: none;
+	color: black;
+	font-weight: bold;
+	font-size: 20px;
+}
+.Exit ion-icon{
+	font-size: 30px;
+	display: flex;
+	align-self: center;
+	margin-top: -2%;
+}
+.ppicture{
+	grid-area: pp;
+	display: flex;
+	justify-self:right;
+	margin-right: 10%;
+	align-self: center;
+}
+.ppicture img{
+	height: 10vh;
+	border-radius: 50%;
+}
+.container{
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+	grid-template-rows: auto;
+	grid-template-areas: 
+		'side main main main main';
+}
+.sidebar{
+	grid-area: side;
+	border-right: 4px solid #dddddd;
+	margin-right:5%;
+}
+.calorie-counter{
+	font-size: 30px;
+	font-weight: bold;
+	background-color: #dddddd;
+	padding: 2% 10%;
+	text-align: center;
+}
+#calorie{
+	font-size: 64px;
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+	display: flex;
+	align-self: center;
+	justify-content: center;
+	border-radius: 50%;
+	background-color: aliceblue;
+	padding: 30% 0;
+}
+.main{
+	grid-area: main;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+.gains{
+	border-collapse: collapse;
+	margin: 0 0 25px 0;
+	font-size: 20px;
+	border-radius: 10px;
+	overflow: hidden;
+	box-shadow: 0 0 10px rgba(0,0,0,0.60);
+	display: flex;
+	flex-direction: column;
+	justify-self:center;
+}
+.gains thead tr{
+	background-color: #1A3360;
+	color: white;
+	text-align: left;
+	font-weight: bold;
+	width: 100%;
+	display: flex;
+}
+.gains th,
+.gains td{
+	padding: 15px 20px;
+}
+.gains tbody tr{
+	border-bottom: 1px solid #dddddd;
+	display: flex;
+}
+.gains tbody tr:nth-of-type(even) {
+	background-color: #f3f3f3;
+}
+.gains tbody tr:nth-of-type(odd) {
+	background-color: #D5DBE1;
+}
+.gains tbody tr:last-of-type{
+	border-bottom: 5px solid #1A3360;
+}
+.moneysaved{
+	font-size: 30px;
+	font-weight: bold;
+	background-color: aliceblue;
+	padding: 2% 10%;
+	text-align: center;
+}
+#money{
+	font-size: 58px;
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+	display: flex;
+	align-self: center;
+	justify-content: center;
+	border-radius: 50%;
+	background-color: #DDDDDD;
+	padding: 30% 0;
+}

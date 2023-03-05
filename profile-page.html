@@ -1,0 +1,77 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Profile</title>
+	<link rel="stylesheet" href="profile-page.css">
+	<link rel="stylesheet" href="modal.css">
+</head>
+
+<body>
+	<div class="navbar">
+		<div class="fridge"><img src="images/PNGs/Fridge.png" alt="fridge logo">Fridge</div>
+		<div class="new-ingredient modal-btn" style="cursor: pointer;"><ion-icon name="add-circle-outline"></ion-icon>New ingredient</div>
+		<div class="Exit"><ion-icon name="exit-outline"></ion-icon><a href="index.html">Log out</a></div>
+		<div class="ppicture"><img src="images/JPGs/blank-pp.jpeg" alt="Profile Picture"></div>
+	</div>
+	<div class="container">
+		<div class="sidebar">
+			
+			<div class="nutrient-table">
+				<table class="gains">
+					<thead>
+						<tr>
+							<th>Nutrient</th>
+							<th>Grams</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>Protein</td>
+							<td>500g</td>
+						</tr>
+						<tr>
+							<td>Carbs</td>
+							<td>50g</td>
+						</tr>
+						<tr>
+							<td>Fat</td>
+							<td>200g</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<div class="calorie-counter">
+				<p id="calorie">643</p>
+				<p>Calories Today</p>
+			</div>
+			<div class="moneysaved">
+				<p>This month you've saved:</p>
+				<p id="money">$15.04</p>
+			</div>
+		</div>
+		<div class="main">
+			<iframe src="Menu.html" frameborder="0" width="100%" height="550px"></iframe>
+			<iframe src="list_content.html" frameborder="0" width="100%" height="700px"></iframe>
+		</div>
+	</div>
+	<div class="modal-bg">
+			<div class="modal">
+				<form id="my-form">
+					<h3 id="modal-heading">New ingredient</h3>
+					<input type="text" name="name" required>
+					<label for="date bought" class="label">Date purchased</label>
+					<input type="date" name="date bought" required>
+					<label for="date of expiring" class="label">Date of expiration</label>
+					<input type="date" name="date of expiring">
+					<button>Submit</button>
+					<span class="modal-close"><ion-icon name="close-circle-outline"></ion-icon></span>
+				</form>
+				<div id="status"></div>
+			</div>
+		</div>
+	<script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+	<script src="ModalBox.js"></script>
+	<script src="jquery-1.11.3.min.js"></script>
+</body>
+</html>
